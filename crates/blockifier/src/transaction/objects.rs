@@ -258,7 +258,7 @@ impl ResourcesMapping {
 }
 
 /// Containes all the L2 resources consumed by a transaction
-#[derive(Clone, Debug, Default, PartialEq)]
+#[derive(Clone, Debug, Default, Eq, PartialEq, Serialize)]
 pub struct StarknetResources {
     pub calldata_length: usize,
     pub state_changes_for_fee: StateChangesCount,
@@ -424,7 +424,7 @@ impl StarknetResources {
     }
 }
 
-#[derive(Default, Clone, Debug, PartialEq)]
+#[derive(Clone, Debug, Default, Eq, PartialEq, Serialize)]
 pub struct TransactionResources {
     pub starknet_resources: StarknetResources,
     pub vm_resources: ExecutionResources,
