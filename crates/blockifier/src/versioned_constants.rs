@@ -136,6 +136,7 @@ impl VersionedConstants {
             (cairo_vm::vm::runners::builtin_runner::POSEIDON_BUILTIN_NAME.to_string(), 1_f64),
             (cairo_vm::vm::runners::builtin_runner::OUTPUT_BUILTIN_NAME.to_string(), 1_f64),
             (cairo_vm::vm::runners::builtin_runner::EC_OP_BUILTIN_NAME.to_string(), 1_f64),
+            (cairo_vm::vm::runners::builtin_runner::KECCAK_BUILTIN_NAME.to_string(), 1_f64),
         ]));
 
         Self { vm_resource_fee_cost, ..Self::create_for_testing() }
