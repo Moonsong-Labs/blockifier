@@ -58,4 +58,4 @@ warnings = "deny"
 future-incompatible = "deny"
 nonstandard-style = "deny"
 rust-2018-idioms = "deny"
-unused = "deny"
+unused = { level = "deny", priority = -1 }
