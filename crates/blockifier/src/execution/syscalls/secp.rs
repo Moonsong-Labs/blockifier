@@ -109,7 +109,7 @@ where
         id
     }
 
-    fn get_point_by_id(
+    pub fn get_point_by_id(
         &self,
         ec_point_id: Felt252,
     ) -> SyscallResult<&short_weierstrass::Affine<Curve>> {
